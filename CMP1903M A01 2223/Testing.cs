@@ -6,22 +6,26 @@ using System.Threading.Tasks;
 
 namespace CMP1903M_A01_2223
 {
+    // This class is responsible for testing the functionality of the Pack and Card class
     class Testing
     {
         static void Test(string[] args)
         {
+            // Create a new instance of the Pack class
             Pack pack = new Pack();
 
             // Shuffle the cards using different methods
             Console.WriteLine("Shuffling cards using Fisher-Yates algorithm:");
+            // Shuffle the card pack using the Fisher-Yates algorithm
             Pack.ShuffleCardPack(1);
             Console.WriteLine("Cards shuffled successfully!");
 
             Console.WriteLine("Shuffling cards using Riffle shuffle algorithm:");
+            // Shuffle the card pack using the Riffle algorithm
             Pack.ShuffleCardPack(2);
             Console.WriteLine("Cards shuffled successfully!");
 
-            // Deal some cards
+            // Deal five cards from the pack and print them
             Console.WriteLine("Dealing a single card:");
             Card card = Pack.Deal();
             Console.WriteLine("Dealt card: " + card.ToString());

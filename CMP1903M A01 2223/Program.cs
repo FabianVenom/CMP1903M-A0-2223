@@ -14,6 +14,7 @@ namespace CMP1903M_A01_2223
             Pack pack = new Pack();
             
             Console.WriteLine("Shuffling cards using Fisher-Yates algorithm:");
+            Console.WriteLine("Cards shuffled successfully!");
             Pack.ShuffleCardPack(1);
             Console.WriteLine("Dealing a single card:");
             
@@ -24,6 +25,7 @@ namespace CMP1903M_A01_2223
             Console.WriteLine("Dealt card: " + card.ToString());
             
             Console.WriteLine("Shuffling cards using Riffle shuffle algorithm:");
+            Console.WriteLine("Cards shuffled successfully!");
             Pack.ShuffleCardPack(2);
             card = Pack.Deal();
             Console.WriteLine("Dealt card: " + card.ToString());
